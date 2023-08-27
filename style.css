@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'digital';
+    src: url('fonts/digital-7.ttf')
+    format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    min-height: 100vh;
+}
+
+.calcuadora {
+    width: 250px;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: silver;
+    box-shadow: 5px 3px 0px rgb(121, 120, 120),
+    -1px -1px 2px rgb(121, 120, 120);
+}
+.header {
+    width: 96%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3px;
+    background-color: #878787;
+    border-radius: 25px 25px 0 0;
+}
+.title {
+    width: 90%;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.title h1 {
+    color: #020202;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.title h1 span {
+    color: #ff6600;
+}
+.title .bat {
+    width: 100px;
+    height: 25px;
+    background-color: #381600;
+    border-radius: 2px;
+}
+.title h5 {
+    color: #2c2c2c;
+    font-size: 10px;
+}
+.visor {
+    width: 90%;
+    height: 50%;
+    background-color: rgb(222, 255, 244);
+    box-shadow: inset 2px 2px 1px #c0fae7,
+    inset -2px -2px 1px #c0fae7;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: end;
+}
+    
+.valor{
+    font-size: 3em;
+    margin: 1px;
+    font-family: 'digital';
+    font-weight: normal;
+}
+
+.body {
+    width: 100%;
+    margin-top: 20px;
+}
+.botoes {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
+}
+.botoes button {
+    margin: 2px;
+    padding: 9px 5px;
+    border-radius: 8px;
+    border-color: #7a7a7a;
+    box-shadow: inset -4px -2px 2px #7a7a7a,
+    inset 4px 2px 4px #969595;
+}
+.botoes .soma {
+    grid-column: 4;
+    grid-row: 4/6;
+}
+.botoes .div {
+    grid-column: 4;
+    grid-row: 1/2;
+}
+.botoes .sub {
+    grid-column: 4;
+    grid-row: 3/4;
+}
+.historico {
+    width: 250px;
+    height: auto 390px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: silver;
+}
+.historico h3 {
+    color: #2e2e2e;
+    padding: 5px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.content {
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px dashed rgb(156, 155, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+.horario {
+    color: #525252;
+    margin-bottom: 5px;
+}
